@@ -26,17 +26,92 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--WeneBrown);
 }
 
 .container {
   margin: 5rem auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 700px;
 }
 
-h1,
+h1 {
+  font-size: 2.75rem;
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem 0;
+  color: var(--DarkCharcoal);
+}
+
 h2,
 h3,
 h4 {
-  font-family: "Young-serif", sans-serif;
+  font-family: "Young Serif", sans-serif;
   font-weight: 400;
   color: var(--Nutmeg);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--WeneBrown);
+}
+
+header img {
+  border-radius: 1rem;
+  max-width: 650px;
+}
+
+header p {
+  margin-bottom: 1.5rem;
+}
+
+.Prep {
+  padding: 1.5rem;
+  list-style: inside;
+  background-color: var(--RoseWhite);
+  margin-bottom: 1.5rem;
+}
+
+.Prep span {
+  color: var(--DarkRaspberry);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.Prep li {
+  margin-top: 1.2rem;
+}
+.Prep li::marker {
+  color: var(--DarkRaspberry);
+}
+
+.Ingredients {
+  list-style: inside;
+}
+
+.Ingredients li::marker {
+  color: var(--Nutmeg);
+}
+
+.Instructions li {
+  padding: 0 0 1rem 1rem;
+}
+
+.Instructions ol {
+  margin-left: 1rem;
+}
+
+.Instructions li::marker {
+  color: var(--Nutmeg);
+  font-weight: 700;
 }
