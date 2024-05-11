@@ -66,9 +66,13 @@ strong {
   color: var(--WeneBrown);
 }
 
-header img {
+li {
+  margin: 1rem 0;
+}
+
+img {
   border-radius: 1rem;
-  max-width: 650px;
+  width: 100%;
 }
 
 header p {
@@ -88,15 +92,16 @@ header p {
   font-size: 1.1rem;
 }
 
-.Prep li {
-  margin-top: 1.2rem;
-}
 .Prep li::marker {
   color: var(--DarkRaspberry);
 }
 
-.Ingredients {
-  list-style: inside;
+.Ingredients ul {
+  margin-left: 1rem;
+}
+
+.Ingredients li {
+  padding: 0 0 0 1rem;
 }
 
 .Ingredients li::marker {
@@ -104,7 +109,7 @@ header p {
 }
 
 .Instructions li {
-  padding: 0 0 1rem 1rem;
+  padding: 0 0 0 1rem;
 }
 
 .Instructions ol {
@@ -114,4 +119,41 @@ header p {
 .Instructions li::marker {
   color: var(--Nutmeg);
   font-weight: 700;
+}
+
+table {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table td {
+  border-bottom: solid 1px var(--LightGrey);
+}
+.value {
+  font-weight: 600;
+  color: var(--Nutmeg);
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+  img {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1.2rem;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 0 1rem;
+  }
 }
